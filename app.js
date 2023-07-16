@@ -2,6 +2,7 @@ import { comments, posts } from './dist/data.js'
 
 const postUl = document.querySelector("#post-ul")
 
+//create card function
 function createCard(post) {
     postUl.innerHTML += `
     <li id="post-${post.id}">
