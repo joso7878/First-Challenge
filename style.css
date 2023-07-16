@@ -72,12 +72,16 @@ header .container {
 
 #title-home {
   position: relative;
-  color: var(--title);
+  color: var(--title); /* Definimos a cor inicial do título */
   font-weight: 600;
   font-size: 36px;
   margin-top: 108px;
   margin-bottom: 26px;
+  left: -50px; /* Adicionamos a posição inicial do título (fora da tela) */
+  opacity: 0; /* Definimos a opacidade inicial como 0 */
+  animation: slideIn 1s ease-in-out forwards; /* Adicionamos a animação 'slideIn' */
 }
+
 #title-home::after {
   content: '';
   position: absolute;
@@ -87,6 +91,14 @@ header .container {
   height: 3px;
   background-color: var(--title);
 }
+
+@keyframes slideIn {
+  to {
+    left: 0; /* Definimos a posição final do título (posição original) */
+    opacity: 1; /* Definimos a opacidade final como 1 */
+  }
+}
+
 
 #post-list {
   display: flex;
@@ -139,9 +151,9 @@ header .container {
 
 /* Estilos para o header */
 .logo {
-  width: 28px;
-  height: 28px;
-  left: 30px;
+  width: auto;
+  height: auto;
+  left: auto;
   /* Adicione os estilos da imagem do logo aqui */
 }
 
@@ -205,4 +217,3 @@ header .container {
   margin-left: 10px;
   /* Adicione outros estilos para o título aqui */
 }
-
