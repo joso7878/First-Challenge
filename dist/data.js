@@ -34,13 +34,8 @@ var posts = [
         title: 'Post 6',
         imageUrl: 'https://i.pinimg.com/564x/81/f6/6f/81f66f185a8994dfa83470e75ea68d18.jpg',
         body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took...'
-    },
-    {
-        id: 6,
-        title: 'Post 7',
-        imageUrl: 'https://i.pinimg.com/564x/81/f6/6f/81f66f185a8994dfa83470e75ea68d18.jpg',
-        body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took...'
     }
+    
 ];
 var comments = [
     {
